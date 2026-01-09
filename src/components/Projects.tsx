@@ -6,6 +6,14 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
+    title: "Real Estate Website",
+    description:
+      "A Real Estate website showcasing properties and services.",
+    link: "https://ralph-creator.github.io/LuxEstate/",
+    tags: ["React", "TailwindCSS", "JavaScript"],
+    color: "from-amber-500 to-purple-500",
+  },
+  {
     title: "Charity Website",
     description:
       "A donation platform for orphan welfare and entertainment activities. Features easy donation flow and event management.",
