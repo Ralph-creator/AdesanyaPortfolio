@@ -14,6 +14,14 @@ const projects = [
     color: "from-amber-500 to-purple-500",
   },
   {
+    title: "Auto dealership Website",
+    description:
+      "An auto dealership website showcasing vehicles and services.",
+    link: "https://ralph-creator.github.io/carsale/",
+    tags: ["React", "TailwindCSS", "JavaScript"],
+    color: "from-blue-500 to-amber-500",
+  },
+  {
     title: "Charity Website",
     description:
       "A donation platform for orphan welfare and entertainment activities. Features easy donation flow and event management.",
