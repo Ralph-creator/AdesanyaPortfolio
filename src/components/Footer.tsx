@@ -15,18 +15,16 @@ export function Footer() {
     <footer className="py-12 border-t border-border/50">
       <div className="container px-4">
         <div className="text-center">
-          {/* Motivational Message */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="text-lg md:text-xl text-muted-foreground italic max-w-2xl mx-auto mb-8"
           >
-            "I look forward to working with interested people and firms — let's
+            "I look forward to working with interested people and firms - let's
             grow and build together."
           </motion.p>
 
-          {/* Social Links */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -47,7 +45,6 @@ export function Footer() {
             ))}
           </motion.div>
 
-          {/* Logo */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -57,14 +54,13 @@ export function Footer() {
             <span className="text-2xl font-bold font-serif text-foreground">RA</span>
           </motion.div>
 
-          {/* Copyright */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-sm text-muted-foreground flex items-center justify-center gap-1"
           >
-            © {currentYear} Raphael Adesanya. Made with{" "}
+            Copyright {currentYear} Raphael Adesanya. Made with{" "}
             <Heart className="h-4 w-4 text-accent inline" fill="currentColor" /> in Nigeria
           </motion.p>
         </div>

@@ -84,7 +84,7 @@ export function Hero() {
             transition={{ delay: 0.4 }}
             className="text-xl md:text-2xl text-muted-foreground mb-8 tracking-wide"
           >
-            Full-Stack Web Developer
+            Backend Engineer | Laravel Developer
           </motion.p>
 
           {/* Description */}
@@ -94,8 +94,9 @@ export function Hero() {
             transition={{ delay: 0.5 }}
             className="text-lg text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed"
           >
-            Crafting modern, responsive, and user-friendly web applications with
-            passion and precision. Let's build something amazing together.
+            I build reliable backend systems and production-ready web products
+            with PHP Laravel, from fintech billing workflows to e-commerce
+            platforms used by real customers.
           </motion.p>
 
           {/* CTA Buttons */}

@@ -17,10 +17,16 @@ const cvData = {
   ],
   experience: [
     {
+      title: "Backend Engineer",
+      company: "MOTOPAY",
+      period: "January 2026 - Present",
+      description: "Building backend systems with PHP Laravel for fintech products, including contributions to Plenti and the ongoing development of the Motobills backend.",
+    },
+    {
       title: "Full-Stack Web Developer Intern",
       company: "New Horizons Tech Firm",
-      period: "May 2024 - Present",
-      description: "Working on multiple real-world projects, building modern web applications",
+      period: "May 2024 - December 2025",
+      description: "Worked on multiple real-world projects while strengthening both frontend and backend development skills.",
     },
     {
       title: "Computer Science Instructor (NYSC)",
@@ -174,7 +180,7 @@ export function CV() {
                 <span className="font-medium">Core Skills</span>
               </div>
               <div className="flex flex-wrap gap-2">
-                {["React", "Next.js", "Laravel", "Tailwind", "JavaScript"].map(
+                {["PHP", "Laravel", "REST APIs", "MySQL", "JavaScript"].map(
                   (skill) => (
                     <span
                       key={skill}

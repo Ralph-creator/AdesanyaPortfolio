@@ -1,0 +1,78 @@
+{
+  "name": "Raphael Adesanya",
+  "title": "Backend Engineer | Laravel Developer",
+  "location": "Nigeria",
+  "email": "adesanyaraph@gmail.com",
+  "phone": "091 6044 5992",
+  "whatsapp": "+234 903 696 9953",
+  "github": "https://github.com/ralph-creator",
+  "summary": "Backend engineer with a strong foundation in Computer Science and hands-on experience building production web products with PHP Laravel. Currently working at MOTOPAY, contributing to fintech and e-commerce platforms including Motobills and Plenti.",
+  "experience": [
+    {
+      "role": "Backend Engineer",
+      "company": "MOTOPAY",
+      "period": "January 2026 - Present",
+      "highlights": [
+        "Build and improve backend services using PHP Laravel for fintech products.",
+        "Contributed to the backend of Plenti, an e-commerce application.",
+        "Currently working on the Motobills backend and product workflows."
+      ]
+    },
+    {
+      "role": "Full-Stack Web Developer Intern",
+      "company": "New Horizons Tech Firm",
+      "period": "May 2024 - December 2025",
+      "highlights": [
+        "Worked on multiple real-world web projects across frontend and backend tasks.",
+        "Strengthened practical experience with modern JavaScript tools and Laravel."
+      ]
+    },
+    {
+      "role": "Computer Science Instructor (NYSC)",
+      "company": "Ekameta Grammar School, Ijero-Ekiti",
+      "period": "July 2023 - July 2024",
+      "highlights": [
+        "Trained students on basic computer logic and design practicals."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Motobills",
+      "role": "Backend Engineer",
+      "details": "Working on backend systems and APIs for MOTOPAY's billing product.",
+      "links": [
+        "https://play.google.com/store/apps/details?id=com.motobills.app",
+        "https://apps.apple.com/ng/app/motobills/id6747974149"
+      ]
+    },
+    {
+      "name": "Plenti Nigeria",
+      "role": "Backend Engineer",
+      "details": "Contributed to the backend powering the e-commerce application.",
+      "links": [
+        "https://apps.apple.com/us/app/plenti-nigeria/id6759972919",
+        "https://play.google.com/store/apps/details?id=com.plentie.ng.app"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Sc. Computer Science",
+      "school": "Ekiti State University, Ado-Ekiti",
+      "period": "November 2017 - April 2023",
+      "details": "Graduated with Second Class Upper Division (2.1)"
+    }
+  ],
+  "skills": [
+    "PHP",
+    "Laravel",
+    "REST API Development",
+    "MySQL",
+    "JavaScript",
+    "React",
+    "Next.js",
+    "Tailwind CSS",
+    "Git & GitHub"
+  ]
+}

@@ -23,10 +23,16 @@ const timeline = [
     icon: Briefcase,
   },
   {
-    year: "2024",
+    year: "2024-2025",
     title: "Tech Career Launch",
-    description: "Joined New Horizons Tech Firm as Full-Stack Web Developer Intern. Obtained Frontend and Backend certifications",
+    description: "Joined New Horizons Tech Firm as a Full-Stack Web Developer Intern and obtained Frontend and Backend certifications",
     icon: Code,
+  },
+  {
+    year: "2026",
+    title: "Joined MOTOPAY",
+    description: "Started working as a Backend Engineer at MOTOPAY, contributing to the Plenti e-commerce platform and the Motobills backend with PHP Laravel",
+    icon: Briefcase,
   },
 ];
 
@@ -81,9 +87,11 @@ export function About() {
                 complex concepts.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                Currently, I'm working as a Full-Stack Web Developer Intern at
-                New Horizons Tech Firm, where I've obtained both Frontend and
-                Backend certifications and contributed to multiple real-world projects.
+                Since January 2026, I've been working at MOTOPAY, a fintech
+                company, as a Backend Engineer. My recent work has focused on
+                building and improving backend systems with PHP Laravel,
+                including contributions to Plenti and the ongoing development of
+                the Motobills backend.
               </p>
             </div>
           </motion.div>

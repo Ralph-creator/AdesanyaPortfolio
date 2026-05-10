@@ -1,15 +1,49 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { ExternalLink, Folder, ArrowUpRight } from "lucide-react";
+import { ExternalLink, Folder, ArrowUpRight, Smartphone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const projects = [
   {
+    title: "Motobills Backend",
+    description:
+      "Backend engineering work for a fintech billing product at MOTOPAY, focused on scalable APIs and reliable product workflows using PHP Laravel.",
+    links: [
+      {
+        label: "Android",
+        href: "https://play.google.com/store/apps/details?id=com.motobills.app",
+      },
+      {
+        label: "iOS",
+        href: "https://apps.apple.com/ng/app/motobills/id6747974149",
+      },
+    ],
+    tags: ["PHP", "Laravel", "Fintech", "REST API"],
+    color: "from-emerald-500 to-teal-500",
+  },
+  {
+    title: "Plenti Nigeria",
+    description:
+      "Contributed as a backend engineer to the e-commerce application at MOTOPAY, supporting the product experience with backend services and integrations.",
+    links: [
+      {
+        label: "Android",
+        href: "https://play.google.com/store/apps/details?id=com.plentie.ng.app",
+      },
+      {
+        label: "iOS",
+        href: "https://apps.apple.com/us/app/plenti-nigeria/id6759972919",
+      },
+    ],
+    tags: ["PHP", "Laravel", "E-commerce", "Backend"],
+    color: "from-sky-500 to-blue-600",
+  },
+  {
     title: "Real Estate Website",
     description:
       "A Real Estate website showcasing properties and services.",
-    link: "https://ralph-creator.github.io/LuxEstate/",
+    links: [{ label: "Live Site", href: "https://ralph-creator.github.io/LuxEstate/" }],
     tags: ["React", "TailwindCSS", "JavaScript"],
     color: "from-amber-500 to-purple-500",
   },
@@ -17,7 +51,7 @@ const projects = [
     title: "Auto dealership Website",
     description:
       "An auto dealership website showcasing vehicles and services.",
-    link: "https://ralph-creator.github.io/carsale/",
+    links: [{ label: "Live Site", href: "https://ralph-creator.github.io/carsale/" }],
     tags: ["React", "TailwindCSS", "JavaScript"],
     color: "from-blue-500 to-amber-500",
   },
@@ -25,7 +59,7 @@ const projects = [
     title: "Charity Website",
     description:
       "A donation platform for orphan welfare and entertainment activities. Features easy donation flow and event management.",
-    link: "https://ralph-creator.github.io/charity/",
+    links: [{ label: "Live Site", href: "https://ralph-creator.github.io/charity/" }],
     tags: ["HTML", "CSS", "JavaScript"],
     color: "from-pink-500 to-rose-500",
   },
@@ -33,7 +67,7 @@ const projects = [
     title: "E-commerce Website",
     description:
       "A furniture sales platform with WhatsApp payment integration. Users can browse products and complete purchases seamlessly.",
-    link: "https://ralph-creator.github.io/Furnitureworld/",
+    links: [{ label: "Live Site", href: "https://ralph-creator.github.io/Furnitureworld/" }],
     tags: ["HTML", "CSS", "JavaScript", "WhatsApp API"],
     color: "from-amber-500 to-orange-500",
   },
@@ -41,7 +75,7 @@ const projects = [
     title: "Construction Company Website",
     description:
       "Professional website for a construction company featuring services showcase, quote requests, and enquiry system.",
-    link: "https://ralph-creator.github.io/domena-builder/",
+    links: [{ label: "Live Site", href: "https://ralph-creator.github.io/domena-builder/" }],
     tags: ["HTML", "CSS", "JavaScript"],
     color: "from-blue-500 to-cyan-500",
   },
@@ -49,7 +83,7 @@ const projects = [
     title: "Brain Challenge Game",
     description:
       "An interactive quiz game with AI-generated questions, timer functionality, and solution explanations for learning.",
-    link: "https://ralph-creator.github.io/brain-challenge/",
+    links: [{ label: "Live Site", href: "https://ralph-creator.github.io/brain-challenge/" }],
     tags: ["JavaScript", "AI", "CSS"],
     color: "from-purple-500 to-violet-500",
   },
@@ -105,7 +139,7 @@ export function Projects() {
                     {project.title}
                   </h3>
                   <a
-                    href={project.link}
+                    href={project.links[0].href}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-shrink-0 p-2 rounded-lg bg-accent/10 hover:bg-accent hover:text-accent-foreground transition-colors"
@@ -129,6 +163,21 @@ export function Projects() {
                     </span>
                   ))}
                 </div>
+
+                <div className="flex flex-wrap gap-2 mt-4">
+                  {project.links.map((link) => (
+                    <a
+                      key={link.href}
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-3 py-2 text-xs font-medium rounded-lg bg-foreground/5 hover:bg-foreground/10 transition-colors"
+                    >
+                      <Smartphone className="h-3.5 w-3.5" />
+                      {link.label}
+                    </a>
+                  ))}
+                </div>
               </div>
             </motion.article>
           ))}
@@ -146,8 +195,9 @@ export function Projects() {
               </div>
               <h3 className="text-xl font-semibold mb-2">And Many More Projects...</h3>
               <p className="text-muted-foreground mb-6">
-                I've worked on various other projects during my internship and personal learning journey.
-                Let's connect and I'll share more about my work!
+                I've also contributed to other client and product work across
+                backend engineering, fintech, and modern web development.
+                Let's connect and I'll share more about my work.
               </p>
               <Button asChild className="bg-foreground text-background hover:bg-foreground/90">
                 <a href="#contact">

@@ -3,17 +3,17 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 
 const skills = [
-  { name: "HTML", level: 95, category: "Frontend" },
-  { name: "CSS", level: 90, category: "Frontend" },
+  { name: "PHP", level: 88, category: "Backend" },
+  { name: "Laravel", level: 86, category: "Backend" },
+  { name: "REST API Development", level: 84, category: "Backend" },
+  { name: "MySQL", level: 80, category: "Backend" },
   { name: "JavaScript", level: 88, category: "Frontend" },
   { name: "TypeScript", level: 80, category: "Frontend" },
   { name: "React", level: 85, category: "Frontend" },
   { name: "Next.js", level: 78, category: "Frontend" },
   { name: "Tailwind CSS", level: 92, category: "Frontend" },
-  { name: "Laravel", level: 75, category: "Backend" },
-  { name: "Node.js", level: 70, category: "Backend" },
   { name: "Git & GitHub", level: 85, category: "Tools" },
-  { name: "API Integration", level: 82, category: "Backend" },
+  { name: "API Integration", level: 86, category: "Backend" },
   { name: "Responsive Design", level: 95, category: "Design" },
 ];
 
