@@ -11,7 +11,7 @@ export function Hero() {
     >
       {/* Subtle Background */}
       <div className="absolute inset-0 hero-gradient" />
-      
+
       {/* Floating Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
